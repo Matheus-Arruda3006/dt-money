@@ -4,16 +4,7 @@ import { Summary } from "../../Components/summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./styles";
 
-    interface Transaction {
-            id: number;
-            description: string;
-            type: 'income' | 'outcome';
-            price: number;
-            category: string;
-            createdAt: string;
-    }
-
-
+    
 export function Transaction (){
 
     const [transactions, setTransactions] =useState<Transaction[]>([])
