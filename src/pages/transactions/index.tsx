@@ -4,6 +4,10 @@ import { Summary } from "../../Components/summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./styles";
 
+function Banana(){
+
+};
+
 export function Transaction (){
 
     useEffect(() => {
@@ -11,6 +15,8 @@ export function Transaction (){
             response.json().then(data => console.log(data));
         })
     }, [])
+
+    
 
 
     return(
